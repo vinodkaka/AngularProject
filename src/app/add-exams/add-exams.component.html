@@ -1,0 +1,16 @@
+<p>add-exams works!</p>
+<div>
+    ExamId:<input type="number" [(ngModel)]="exam.examId">
+    <br>
+    ExamName:<input type="text" [(ngModel)]="exam.examName">
+    <br>
+    ExamDuration:<input type="text" [(ngModel)]="exam.examDuration">
+    <br>
+    ExamDate:<input type="text" [(ngModel)]="exam.examDate">
+    <br>
+    ExamPercenteage:<input type="text" [(ngModel)]="exam.examPercentage">
+    <br>
+</div>
+<button class="btn btn-primary" (click)="submit()">ADD</button>
+&nbsp;
+<button class="btn btn-warning" (click)="backtoadmin()">Back</button>

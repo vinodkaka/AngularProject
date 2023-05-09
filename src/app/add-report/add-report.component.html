@@ -1,0 +1,17 @@
+<p>add-report works!</p>
+<div>
+    ReportId:<input type="number" [(ngModel)]="report.reportId">
+    <br>
+    studentName:<input type="text" [(ngModel)]="report.studentName">
+    <br>
+    examDate:<input type="text" [(ngModel)]="report.examDate">
+    <br>
+    score:<input type="text" [(ngModel)]="report.score">
+    <br>
+    studentId:<input type="text" [(ngModel)]="report.student.studentId">
+    <br>
+    ExamId:<input type="text" [(ngModel)]="report.exam.examId">
+    <br>
+    <button class="btn btn-primary" (click)="submit(report.student.studentId,report.exam.examId)">ADD</button>
+</div><br>
+<button class="btn btn-warning" (click)="backtoadmin()">Back</button>

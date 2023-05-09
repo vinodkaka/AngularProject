@@ -1,0 +1,21 @@
+<p>get-all-exams works!</p>
+
+<div *ngFor="let exam of Exams">
+    <span>ExamId:{{exam.examId}}</span>
+    <br>
+    <span>ExamName:{{exam.examName}}</span>
+    <br>
+    <span>ExamDuration:{{exam.examDuration}}</span>
+    <br>
+    <span>ExamDate:{{exam.examDate}}</span>
+    <br>
+    <span>ExamPercentage:{{exam.examPercentage}}</span>
+    <br>
+    <button class="btn btn-primary" (click)="update(exam.examId)">Update</button>
+    &nbsp;&nbsp;
+    <button class="btn btn-danger" (click)="delete(exam.examId)" >Delete</button>
+    <hr/>
+</div>
+
+
+<button class="btn btn-warning" (click)="backtoadmin()">Back</button>

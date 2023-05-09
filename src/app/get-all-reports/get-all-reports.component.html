@@ -1,0 +1,23 @@
+<p>get-all-reports works!</p>
+<div *ngFor="let report of Reports">
+ReportId:<span>{{report.reportId}}</span>
+<br>
+StudentName:<span>{{report.studentName}}</span>
+<br>
+ExamDate:<span>{{report.examDate}}</span>
+<br>
+mrks secured:<span>{{report.score}}</span>
+<br>
+studentId:<span>{{report.student.studentId}}</span>
+<br>
+ExamId:<span>{{report.exam.ExamId}}</span>
+<br><br>
+
+<!-- <button class="btn btn-primary" (click)="update(report.reportId)">UPDATE</button>
+&nbsp;
+<button class="btn btn-danger" (click)="delete(report.reportId)">DELETE</button>
+<br> -->
+<hr>
+</div>
+
+<button class="btn btn-warning" (click)="backtoadmin()">Back</button>

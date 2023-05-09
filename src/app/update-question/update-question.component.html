@@ -1,0 +1,23 @@
+<p>update-question works!</p>
+<div>
+QuestionId:<input type="number" [(ngModel)]="question.questionId">
+<br>
+QuestionName:<input type="text" [(ngModel)]="question.question">
+<br>
+<input type="radio">:<input type="text" [(ngModel)]="question.option1">
+<br>
+<input type="radio">:<input type="text" [(ngModel)]="question.option2">
+<br>
+<input type="radio"><input type="text" [(ngModel)]="question.option3">
+<br>
+<input type="radio">:<input type="text" [(ngModel)]="question.option4">
+<br>
+CorrectAnswer:<input type="text" [(ngModel)]="question.correctAnswer">
+<br>
+Marks:<input type="text" [(ngModel)]="question.marks">
+<br>
+ExamId:<input type="text" [(ngModel)]="question.exam.examId">
+<br>
+</div>
+<button class="btn btn-primary" (click)="submit(question.exam.examId,question.questionId)">Submit</button>&nbsp;
+<button class="btn btn-warning" (click)="backtoadmin()">Back</button>

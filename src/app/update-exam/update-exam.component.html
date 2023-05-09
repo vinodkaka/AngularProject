@@ -1,0 +1,16 @@
+<p>update-exam works!</p>
+
+ExamId:<input type="number" [(ngModel)]="exam.examId">
+    <br>
+ExamName:<input type="text" [(ngModel)]="exam.examName"> 
+    <br>
+ExamDuration:<input type="text" [(ngModel)]="exam.examDuration">
+    <br>
+ExamDate:<input type="text" [(ngModel)]="exam.examDate">
+    <br>
+ExamPercentage:<input type="text" [(ngModel)]="exam.examPercentage">
+    <br>
+    <button class="btn btn-primary" (click)="submit(exam.examId)">Update</button>
+    &nbsp;&nbsp;
+    
+<button class="btn btn-warning" (click)="backtoadmin()">Back</button>

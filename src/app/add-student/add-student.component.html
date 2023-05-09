@@ -1,0 +1,16 @@
+<p>add-student works!</p>
+
+<div>
+    StudentId:<input type="number" [(ngModel)]="student.studentId">
+    <br>
+    StudentNmae:<input type="text" [(ngModel)]="student.studentName">
+    <br>
+    StudentEmail:<input type="text" [(ngModel)]="student.studentEmail">
+    <br>
+   studentpassword:<input type="text" [(ngModel)]="student.studentPassword">
+    <br>
+    enrollExam:<input type="text" [(ngModel)]="student.enrolExam">
+</div>
+<button (click)="submit()">Submit</button>
+&nbsp;&nbsp;
+<button class="btn btn-warning" (click)="backtoadmin()">Back</button>
