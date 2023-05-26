@@ -2,7 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
-#Description
+# Description
+
 This project, built using Angular, consists of two modules: Admin and Student.The Admin module is responsible for performing various operations such as creating, updating, and deleting exams, as well as managing exam-related information. The Admin can also manage student information, including adding, updating, and deleting student records, along with their report cards. Additionally, the Admin can generate reports for individual students as well as consolidated reports for all students, organized by exam.
 
 The Student module allows students to log in using their student ID and password, which are provided by the Admin. Once logged in, students can access the exams assigned to them and take the exams. After completing an exam, the student's report card will be displayed.
